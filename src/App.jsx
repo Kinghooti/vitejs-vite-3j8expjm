@@ -295,10 +295,6 @@ const Login=({onLogin,extra,onSignUp})=>{
             </div>
             {err&&<Tp c="#EF4444" ch={err}/>}
             <button className="btn btr" onClick={doLogin} disabled={load} style={{width:"100%"}}>{load?"Signing in…":"Sign In"}</button>
-            <div style={{marginTop:16,padding:11,background:"rgba(220,20,60,0.06)",borderRadius:8,border:"1px solid rgba(220,20,60,0.2)"}}>
-              <p style={{fontSize:".72rem",color:"var(--mt)",marginBottom:4,fontWeight:600}}>ADMIN CREDENTIALS</p>
-              <p style={{fontSize:".77rem",color:"var(--mt)"}}><span style={{color:"var(--pr)",fontWeight:700}}>Username:</span> elham · <span style={{color:"var(--pr)",fontWeight:700}}>Password:</span> Malek@007</p>
-            </div>
           </>):(<>
             <p style={{color:"var(--mt)",fontSize:".83rem",marginBottom:18,textAlign:"center"}}>Create a new account</p>
             {[["Full Name","name","text"],["Username","username","text"],["Password","password","password"]].map(([lbl,key,type])=>(
